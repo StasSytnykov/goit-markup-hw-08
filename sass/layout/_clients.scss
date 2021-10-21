@@ -1,13 +1,13 @@
-.clients__list {
-  display: flex;
-}
+// .clients__list {
+//   // display: flex;
+// }
 
-.clients__item + .clients__item {
-  margin-left: var(--gap);
-}
+// .clients__item + .clients__item {
+//   margin-left: var(--gap);
+// }
 
 .clients__link {
-  @extend %container-justify;
+  // @extend %container-justify;
   width: 170px;
   height: 92px;
   border: 1px solid var(--social-links-color);

@@ -1,8 +1,8 @@
 .hero {
   background-color: var(--background-color);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 280px;
+  // padding-top: 200px;
+  // padding-bottom: 280px;
   max-width: 1600px;
 
   @extend %position;
@@ -24,6 +24,6 @@
   color: var(--accent-color);
 
   max-width: 696px;
-  margin-bottom: var(--gap);
+  // margin-bottom: var(--gap);
   @extend %position;
 }

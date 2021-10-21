@@ -1,19 +1,23 @@
 .logo {
-  font-family: 'Raleway', sans-serif;
-  @include font (26px, 1.3, 700);
-  text-decoration: none;
+  display: flex;
 
+  font-family: 'Raleway', sans-serif;
+  @include font(26px, 1.3, 700);
+  text-decoration: none;
   color: var(--logo-color);
 
-  margin-right: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 
-  display: flex;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
 }
 
 .logo__name--style {
   color: var(--style-color);
 }
-
 
 .logo__style-footer {
   color: var(--accent-color);

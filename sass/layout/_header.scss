@@ -1,3 +1,85 @@
 .page-header {
   border-bottom: 1px solid var(--border-color);
 }
+
+// Контакты хедера
+
+// Смартфон
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
+
+// Планшет
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list + .contacts__list {
+    margin-top: 10px;
+  }
+
+  .contacts__link {
+    text-decoration: none;
+    @include font(12px, 1.16, 500, 0.02em);
+    color: inherit;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--style-color);
+    }
+  }
+
+  .contacts__icon {
+    margin-right: 8px;
+    fill: currentColor;
+  }
+}
+
+// Десктоп
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    align-items: center;
+  }
+
+  .contacts__list + .contacts__list {
+    margin-left: var(--section-gap);
+  }
+
+  .contacts__link {
+    text-decoration: none;
+    @include font(14px, 1.14, 500, 0.02em);
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: inherit;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--style-color);
+    }
+  }
+
+  .contacts__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+
+// Стандартные стили
+
+.contacts {
+  margin-left: auto;
+}

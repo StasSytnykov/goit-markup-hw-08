@@ -158,11 +158,12 @@
 }
 
 // Форма футера
+
 .form-footer {
-  display: flex;
-  margin-left: 93px;
-  padding-top: 72px;
-  padding-bottom: 94px;
+  // display: flex;
+  // margin-left: 93px;
+  // padding-top: 72px;
+  // padding-bottom: 94px;
 
   @include font(14px, 1.14, 700);
   text-transform: uppercase;
@@ -170,14 +171,14 @@
   color: var(--accent-color);
 }
 
-.form-footer__direction {
-  display: flex;
-  flex-direction: column;
-}
+// .form-footer__direction {
+//   display: flex;
+//   flex-direction: column;
+// }
 
-.form-footer__label {
-  margin-bottom: 20px;
-}
+// .form-footer__label {
+//   margin-bottom: 20px;
+// }
 
 .form-footer__input {
   width: 358px;
@@ -186,7 +187,7 @@
 
   color: rgba(255, 255, 255, 0.6);
 
-  padding: 15px 295px 15px 16px;
+  // padding: 15px 295px 15px 16px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;

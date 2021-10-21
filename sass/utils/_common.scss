@@ -5,16 +5,16 @@ body {
   background-color: var(--accent-color);
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+// .section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
 
 .section__title {
   @include font(36px, 1.16, 700);
   text-align: center;
   color: var(--title-text-color);
-  margin-bottom: var(--section-gap);
+  // margin-bottom: var(--section-gap);
 }
 
 img {
