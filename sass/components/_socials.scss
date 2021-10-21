@@ -1,0 +1,74 @@
+// Социальные линки команды
+
+.team__social-link {
+  @extend %container-justify;
+  border: none;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+
+  color: var(--social-links-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background-color: var(--style-color);
+  }
+
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.team__social-icon {
+  fill: currentColor;
+}
+
+// Социальные линки подвала
+.social-footer {
+  margin-left: 70px;
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+
+.social-footer__text {
+  @include font (14px, 1.14, 700);
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+
+  margin-bottom: 20px;
+}
+
+.social-footer__flex {
+  display: flex;
+}
+
+.social-footer__link {
+  @extend %container-justify;
+  border: none;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  color: var(--accent-color);
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background-color: var(--style-color);
+  }
+
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.social-footer__icon {
+  fill: currentColor;
+}

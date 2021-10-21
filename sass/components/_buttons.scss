@@ -1,0 +1,113 @@
+// Кнопка героя
+
+.hero__btn {
+  @extend %button;
+
+  padding: 10px 32px;
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-style-color);
+  }
+}
+
+// Кнопка закрытия модального окна
+
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  background: var(--accent-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--style-color);
+  }
+}
+
+// Кнопка отправки формы в модальном окне
+
+.modal-form__send-button {
+  @extend %position;
+
+  height: 50px;
+  width: 200px;
+
+  @extend %button;
+
+  &:hover,
+  &:focus {
+    background: var(--secondary-style-color);
+  }
+}
+
+// Кнопки фильтров
+
+.button__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--section-gap);
+}
+
+.button__item {
+  & + & {
+    margin-left: 8px;
+  }
+}
+
+.button__filter {
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-family: inherit;
+  @include font (16px, 1.62, 500);
+
+  padding: 6px 22px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+    background-color: var(--style-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+// Кнопка в футере
+
+.form-footer__btn {
+  @extend %container-justify;
+
+  margin-left: 12px;
+  margin-top: 36px;
+  height: 50px;
+  width: 200px;
+
+  @extend %button;
+
+  &:hover,
+  &:focus {
+    background: var(--secondary-style-color);
+  }
+}
+
+.form-footer__icon-send {
+  margin-left: 10px;
+  fill: currentColor;
+}

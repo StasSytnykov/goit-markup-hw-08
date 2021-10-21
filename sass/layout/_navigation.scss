@@ -1,0 +1,46 @@
+.navigation {
+  @extend %container-flex;
+}
+
+.site-nav {
+  @extend %container-flex;
+}
+
+.site-nav__list + .site-nav__list {
+  margin-left: var(--section-gap);
+}
+
+.site-nav__link {
+  @include font (14px, 1.14, 500, 0.02em);
+  text-decoration: none;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--title-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--style-color);
+  }
+}
+
+.site-nav__link--style {
+  color: var(--style-color);
+  position: relative;
+  display: flex;
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+
+    position: absolute;
+    bottom: -1px;
+
+    background-color: var(--style-color);
+    border-radius: 2px;
+  }
+}
