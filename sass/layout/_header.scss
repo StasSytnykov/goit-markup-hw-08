@@ -10,17 +10,15 @@
   .site-nav {
     display: none;
   }
-}
 
-// Планшет
-
-@media screen and (max-width: 767px) {
   .contacts {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+// Планшет
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__list + .contacts__list {
     margin-top: 10px;
   }
@@ -28,7 +26,7 @@
   .contacts__link {
     display: flex;
     align-items: center;
-    
+
     text-decoration: none;
     @include font(12px, 1.16, 500, 0.02em);
     color: inherit;

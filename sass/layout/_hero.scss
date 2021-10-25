@@ -1,8 +1,8 @@
 .hero {
   background-color: var(--background-color);
   text-align: center;
-  // padding-top: 200px;
-  // padding-bottom: 280px;
+  padding-top: 200px;
+  padding-bottom: 280px;
   max-width: 1600px;
 
   @extend %position;
@@ -19,11 +19,16 @@
 }
 
 .hero__title {
-  @include font (44px, 1.36, 900, 0.06em);
+  @media screen and (max-width: 1199px) {
+    @include font(26px, 1.61, 900, 0.06em);
+    max-width: 360px;
+  }
+
+  @include font(44px, 1.36, 900, 0.06em);
   text-transform: uppercase;
   color: var(--accent-color);
 
   max-width: 696px;
-  // margin-bottom: var(--gap);
+  margin-bottom: var(--gap);
   @extend %position;
 }
