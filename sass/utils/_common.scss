@@ -5,10 +5,20 @@ body {
   background-color: var(--accent-color);
 }
 
-// .section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
+.section {
+
+  // Смартфон/планшет
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  // Десктоп
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .section__title {
   @include font(36px, 1.16, 700);

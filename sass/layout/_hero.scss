@@ -19,10 +19,15 @@
 }
 
 .hero__title {
+  
+  // Смартфон/планшет 
+
   @media screen and (max-width: 1199px) {
     @include font(26px, 1.61, 900, 0.06em);
     max-width: 360px;
   }
+
+  //Десктоп
 
   @include font(44px, 1.36, 900, 0.06em);
   text-transform: uppercase;

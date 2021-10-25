@@ -1,3 +1,17 @@
+// Смартфон/планшет
+
+@media screen and (max-width: 1199px) {
+  .images {
+    display: none;
+  }
+
+  .images__item {
+    display: none;
+  }
+}
+
+// Десктоп
+
 .section--gap {
   padding-top: 0;
 }
@@ -8,7 +22,6 @@
 
 .images__list {
   display: flex;
-  flex-direction: column;
   align-items: center;
   margin-left: calc(-1 * var(--gap));
   margin-top: calc(-1 * var(--gap));
@@ -18,11 +31,11 @@
   position: relative;
 }
 
-// .images__item {
-//   flex-basis: calc(100% / 3 - var(--gap));
-//   margin-left: var(--gap);
-//   margin-top: var(--gap);
-// }
+.images__item {
+  flex-basis: calc(100% / 3 - var(--gap));
+  margin-left: var(--gap);
+  margin-top: var(--gap);
+}
 
 .images__description {
   position: absolute;
