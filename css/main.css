@@ -187,7 +187,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .contacts__list + .contacts__list {
     margin-top: 10px;
   }
@@ -354,7 +354,6 @@ img {
 }
 
 .features__text {
-  font-family: 'Roboto';
   font-size: 14px;
   line-height: 1.71;
 }
@@ -570,9 +569,6 @@ img {
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.3;
@@ -582,15 +578,15 @@ img {
   color: var(--logo-color);
 }
 
-@media screen and (min-width: 1200px) {
-  .logo {
-    margin-right: 93px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .logo {
     margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
   }
 }
 
