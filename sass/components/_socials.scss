@@ -44,6 +44,10 @@
 
 .social-footer__flex {
   display: flex;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .social-footer__link {
