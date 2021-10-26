@@ -1,13 +1,45 @@
-// .clients__list {
-//   // display: flex;
-// }
+.clients__list {
+  display: flex;
 
-// .clients__item + .clients__item {
-//   margin-left: var(--gap);
-// }
+  // Смартфон/планшет
+
+  @media screen and (max-width: 1199px) {
+    margin-right: calc(-1 * var(--gap));
+    margin-bottom: calc(-1 * var(--gap));
+    flex-wrap: wrap;
+  }
+}
+
+.clients__item {
+  // Смартфон
+
+  @media screen and (max-width: 767px) {
+    flex-basis: calc(100% / 2 - var(--gap));
+    margin-right: var(--gap);
+    margin-bottom: var(--gap);
+  }
+
+  // Планшет
+
+  @media screen and (max-width: 1199px) {
+    flex-basis: calc(100% / 3 - var(--gap));
+    margin-right: var(--gap);
+    margin-bottom: var(--gap);
+  }
+}
+
+// Десктоп
+
+@media screen and (min-width: 1200px) {
+  .clients__item + .clients__item {
+    margin-left: var(--gap);
+  }
+}
+
+// Общие стили
 
 .clients__link {
-  // @extend %container-justify;
+  @extend %container-justify;
   width: 170px;
   height: 92px;
   border: 1px solid var(--social-links-color);

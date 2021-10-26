@@ -29,9 +29,7 @@
 
 .images__item {
   position: relative;
-}
 
-.images__item {
   flex-basis: calc(100% / 3 - var(--gap));
   margin-left: var(--gap);
   margin-top: var(--gap);

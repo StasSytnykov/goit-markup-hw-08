@@ -6,7 +6,6 @@ body {
 }
 
 .section {
-
   // Смартфон/планшет
 
   padding-top: 60px;
@@ -24,7 +23,11 @@ body {
   @include font(36px, 1.16, 700);
   text-align: center;
   color: var(--title-text-color);
-  // margin-bottom: var(--section-gap);
+  margin-bottom: var(--gap);
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: var(--section-gap);
+  }
 }
 
 img {
