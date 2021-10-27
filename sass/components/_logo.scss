@@ -1,7 +1,12 @@
 .logo {
+  display: flex;
+  justify-content: center;
+
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   color: var(--logo-color);
+
+  margin-bottom: 20px;
 
   @media screen and (max-width: 1199px) {
     margin-right: 88px;
@@ -20,4 +25,8 @@
 
 .logo__style-footer {
   color: var(--accent-color);
+}
+
+.logo--gap {
+  margin-right: 0;
 }
