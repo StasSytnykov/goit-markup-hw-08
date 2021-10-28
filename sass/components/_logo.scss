@@ -2,15 +2,19 @@
   display: flex;
   justify-content: center;
 
+  @include font(24px, 1.16, 700);
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   color: var(--logo-color);
 
-  margin-bottom: 20px;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
     margin-right: 88px;
-    @include font(24px, 1.16, 700);
   }
 
   @media screen and (min-width: 1200px) {
@@ -29,4 +33,5 @@
 
 .logo--gap {
   margin-right: 0;
+  margin-bottom: 20px;
 }

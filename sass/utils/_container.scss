@@ -16,12 +16,17 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .container-flex {
+.container-flex {
     display: flex;
     align-items: center;
   }
-}
+
+// @media screen and (min-width: 768px) {
+//   .container-flex {
+//     display: flex;
+//     align-items: center;
+//   }
+// }
 
 .footer-container {
   @media screen and (min-width: 1200px) {
