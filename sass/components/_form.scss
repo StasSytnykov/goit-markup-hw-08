@@ -2,11 +2,11 @@
 
 .modal__title {
   @media screen and (max-width: 1199px) {
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
-  padding-top: 40px;
+  margin-top: 40px;
   margin-bottom: 12px;
 
   @include font(20px, 1.15, 700);
