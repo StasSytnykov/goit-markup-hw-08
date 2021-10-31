@@ -1,12 +1,12 @@
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
 
   // Смартфон/планшет
 
   @media screen and (max-width: 1199px) {
     margin-right: calc(-1 * var(--gap));
     margin-bottom: calc(-1 * var(--gap));
-    flex-wrap: wrap;
   }
 }
 
@@ -21,7 +21,7 @@
 
   // Планшет
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 3 - var(--gap));
     margin-right: var(--gap);
     margin-bottom: var(--gap);
@@ -44,7 +44,8 @@
   height: 92px;
 
   @media screen and (max-width: 767px) {
-    width: 210px;
+    max-width: 210px;
+    width: 100%;
   }
 
   @media screen and (min-width: 768px) {

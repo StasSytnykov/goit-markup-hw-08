@@ -21,6 +21,12 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
+  @media screen and (max-width: 767px) {
+    .team__member:not(:last-child) {
+      margin-bottom: var(--gap);
+    }
+  }
+
   // Стили для планшета
 
   @media screen and (min-width: 768px) {
@@ -35,14 +41,6 @@
     flex-basis: calc(100% / 4 - var(--gap));
     margin-left: var(--gap);
     margin-top: var(--gap);
-  }
-}
-
-// Стили для смартфона
-
-@media screen and (max-width: 767px) {
-  .team__member:not(:last-child) {
-    margin-bottom: var(--gap);
   }
 }
 
