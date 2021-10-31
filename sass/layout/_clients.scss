@@ -1,12 +1,13 @@
 .clients__list {
   display: flex;
+  margin-right: calc(-1 * var(--gap));
+  margin-bottom: calc(-1 * var(--gap));
   flex-wrap: wrap;
 
   // Смартфон/планшет
 
-  @media screen and (max-width: 1199px) {
-    margin-right: calc(-1 * var(--gap));
-    margin-bottom: calc(-1 * var(--gap));
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
   }
 }
 

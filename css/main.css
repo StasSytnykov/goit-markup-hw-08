@@ -560,14 +560,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: calc(-1 * var(--gap));
+  margin-bottom: calc(-1 * var(--gap));
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .clients__list {
-    margin-right: calc(-1 * var(--gap));
-    margin-bottom: calc(-1 * var(--gap));
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
