@@ -286,6 +286,7 @@
           <ul class="images__list">
             <li class="images__item">
               <img
+              srcset="./images/img-one.jpg 1x, ./images/img-one@2x.jpg 2x"
                 src="./images/img-one.jpg"
                 alt="Человек печатает на клавиатуре"
               />
@@ -294,6 +295,7 @@
 
             <li class="images__item">
               <img
+              srcset="./images/img-two.jpg 1x, ./images/img-two@2x.jpg 2x"
                 src="./images/img-two.jpg"
                 alt="Человек выбирает интерефейс на телефоне"
               />
@@ -303,6 +305,7 @@
             <li class="images__item">
               <img
                 class="img"
+                srcset="./images/img-three.jpg 1x, ./images/img-three@2x.jpg 2x"
                 src="./images/img-three.jpg"
                 alt="Человек рисует на планшете"
               />
@@ -317,7 +320,19 @@
           <h2 class="team section__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__member">
-              <img src="./images/photo-one.jpg" alt="Фото члена команды" />
+              <img
+                srcset="
+                  ./images/member-one-mobile.jpg     450w,
+                  ./images/member-one-mobile@2x.jpg  900w,
+                  ./images/member-one-tablet.jpg     354w,
+                  ./images/member-one-tablet@2x.jpg  708w,
+                  ./images/member-one-desktop.jpg    270w,
+                  ./images/member-one-desktop@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                src="./images/member-one-mobile.jpg"
+                alt="Фото члена команды"
+              />
 
               <div class="team__member-description">
                 <h3 class="team__member-name">Игорь Демьяненко</h3>
@@ -349,7 +364,19 @@
             </li>
 
             <li class="team__member">
-              <img src="./images/photo-two.jpg" alt="Фото члена команды" />
+              <img
+                srcset="
+                  ./images/member-two-mobile.jpg     450w,
+                  ./images/member-two-mobile@2x.jpg  900w,
+                  ./images/member-two-tablet.jpg     354w,
+                  ./images/member-two-tablet@2x.jpg  708w,
+                  ./images/member-two-desktop.jpg    270w,
+                  ./images/member-two-desktop@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                src="./images/member-two-mobile.jpg"
+                alt="Фото члена команды"
+              />
 
               <div class="team__member-description">
                 <h3 class="team__member-name">Ольга Репина</h3>
@@ -382,7 +409,19 @@
             </li>
 
             <li class="team__member">
-              <img src="./images/photo-three.jpg" alt="Фото члена команды" />
+              <img
+                srcset="
+                  ./images/member-three-mobile.jpg     450w,
+                  ./images/member-three-mobile@2x.jpg  900w,
+                  ./images/member-three-tablet.jpg     354w,
+                  ./images/member-three-tablet@2x.jpg  708w,
+                  ./images/member-three-desktop.jpg    270w,
+                  ./images/member-three-desktop@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                src="./images/member-three-mobile.jpg"
+                alt="Фото члена команды"
+              />
 
               <div class="team__member-description">
                 <h3 class="team__member-name">Николай Тарасов</h3>
@@ -413,7 +452,19 @@
             </li>
 
             <li class="team__member">
-              <img src="./images/photo-four.jpg" alt="Фото члена команды" />
+              <img
+                srcset="
+                  ./images/member-four-mobile.jpg     450w,
+                  ./images/member-four-mobile@2x.jpg  900w,
+                  ./images/member-four-tablet.jpg     354w,
+                  ./images/member-four-tablet@2x.jpg  708w,
+                  ./images/member-four-desktop.jpg    270w,
+                  ./images/member-four-desktop@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                src="./images/member-four-mobile.jpg"
+                alt="Фото члена команды"
+              />
 
               <div class="team__member-description">
                 <h3 class="team__member-name">Михаил Ермаков</h3>
