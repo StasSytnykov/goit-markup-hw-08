@@ -477,6 +477,9 @@ img {
   .images {
     display: none;
   }
+  .images__list {
+    display: none;
+  }
   .images__item {
     display: none;
   }
