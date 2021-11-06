@@ -1,6 +1,11 @@
 // Социальные линки команды
 
-.team__social-link {
+.team-social {
+  display: flex;
+  justify-content: center;
+}
+
+.team-social__link {
   @extend %container-justify;
   border: none;
   border-radius: 50%;
@@ -22,7 +27,7 @@
   }
 }
 
-.team__social-icon {
+.team-social__icon {
   fill: currentColor;
 }
 
