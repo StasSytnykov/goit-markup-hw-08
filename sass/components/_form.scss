@@ -229,8 +229,6 @@
 }
 
 .form-footer__label {
-  margin-bottom: 20px;
-
   // Смартфон/планшет
 
   @media screen and (max-width: 1199px) {
@@ -240,13 +238,14 @@
 
 .form-footer__input {
   width: 100%;
+  max-width: 450px;
   height: 50px;
   background: var(--background-color);
 
+  margin-top: 20px;
+
   color: rgba(255, 255, 255, 0.6);
 
-  padding-top: 15px;
-  padding-bottom: 15px;
   padding-left: 16px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -267,13 +266,5 @@
   &:hover,
   &:focus {
     border-color: var(--style-color);
-  }
-
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 358px;
   }
 }
